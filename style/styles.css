@@ -1,0 +1,100 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+ 
+form {
+    width: 100%;
+    max-width: 400px; /* Limita a largura do formulário */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px; /* Adiciona espaçamento interno */
+    background-color: #f9f9f9; /* Cor de fundo para o formulário */
+    border-radius: 8px; /* Arredonda os cantos do formulário */
+}
+
+input[type="text"], input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="text"]:focus, input[type="email"]:focus {
+    border-color: #28a745; /* Altera a cor da borda ao focar */
+    outline: none; /* Remove o outline padrão */
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    border: none; /* Remove borda do botão */
+}
+
+button:hover {
+    background-color: #218838; /* Cor de fundo mais escura no hover */
+}
+
+button:focus {
+    outline: 2px solid #218838; /* Altera o outline quando o botão é focado */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px; /* Adiciona padding no container */
+    margin-top: 200px;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 900px; /* Limita a largura da tabela */
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.styled-table th, .styled-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+.styled-table th {
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.styled-table td {
+    background-color: #fff;
+}
+
+.styled-table tr:nth-child(even) td {
+    background-color: #f9f9f9; /* Adiciona alternância de cores nas linhas */
+}
+
+.actions {
+    margin-top: 20px;
+}
+
+.actions a {
+    text-decoration: none;
+    color: #28a745;
+    font-weight: bold;
+}
+
+.actions a:hover {
+    color: #218838; /* Cor no hover */
+}
